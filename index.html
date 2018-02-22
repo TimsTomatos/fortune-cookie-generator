@@ -7,16 +7,27 @@
 </head>
 <body>
 	<div id="general" align="center">
+
 		<div id="title">
 			<h1>Unfortante Cookie Generator</h1>
 		</div>
 
-		<div id="wheel">
+		<script>
+				var fortune = ["test","quiz","hw","cw"];
+
+				function fortuneGiven() { Math.floor(Math.random() * fortune.length)
+				}
+				document.write(fortune[fortuneGiven]);
+		
+		</script>
+
+		<!--<div id="wheel">
 			<span class="dot"></span>
 		</div>
-
+-->
 		<div id="button">
 			<button type="button">Get Fortune!</button>
+			<button onclick="fortuneGiven()";>Execute</button>
 		</div>
 
 
