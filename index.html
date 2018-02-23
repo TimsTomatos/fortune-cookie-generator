@@ -7,34 +7,31 @@
 	<title>Unfortunate Cookie Generator</title>
 </head>
 <body>
-
-	<div id="general" align="center">
+	<body bgcolor=black>
+	<div id="general" align="left">
 
 		<div id="title">
 			<h1>Unfortunate Cookie Generator</h1>
 		</div>
 		
 		<div id="unfortunate"> 
-        	<h1 id="fortune"> Wow! How Unfortunate... </h1>
+        	<h2 class="fortune"> Wow! How Unfortunate... </h2>
         	<p id="fortune-cookie-text"> </p>
-       </div>
+        </div>
 
-      <div id="oldFortunes">
-         	<h1>  Old Fortunes </h1>
+        <div id="button">
+      		<button onclick = "forTell()" id="fortune-button">
+      		<p>Generate Function</p>
+        </button>	
+    	</div>	 
+
+        <div id="oldFortunes">
+         	<h2 class="fortune">  Old Fortunes </h2>
 
          	<ul id="previous-fortunes">
          	</ul>
-      </div>
+        </div>
 		
-		<div id="button">
-      		<button onclick = "forTell()" id="fortune-button">
-      		<p>Generate Function</p>
-      </button>	
-    </div>	  	
-
-
-
-
 	</div>
 	<script type="text/javascript" src="app.js"></script>
 </body>
