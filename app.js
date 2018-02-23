@@ -19,7 +19,7 @@ function forTell() {
 
 document.getElementById("fortune-cookie-text").innerHTML = fortune[myFortune]
 
-var allFortune = document.createElement("LI");
+var allFortune = document.createElement("ul");
 var allOfFortune = document.createTextNode(fortune[myFortune]);
 allFortune.appendChild(allOfFortune);
 document.getElementById("previous-fortunes").appendChild(allFortune);
