@@ -1,18 +1,43 @@
+var fortune = [
+"Your Gone",
+"Your Ascending",
+"Your Trascending",
+"Your Gonna Caught",
+"Only Time Will Tell",
+"All Your Homework is Due Tommorrow",
+"Your Coding Project is Gonna be Due this Week instead of Next Week",
+"This is Gonna Take Awhile...",
+"Undefined... (JK ;)  )",
+"Your Trig Exam is Due Tommorrow"
+];
+
+
+
 function forTell() {
-var fortune = ["test","quiz","hw","cw"];
 
+ var myFortune = Math.floor((Math.random() * fortune.length));
 
- var f = Math.floor((Math.random() * fortune.length));
-
-document.getElementById("unfortune").innerHTML = fortune[f]
+document.getElementById("fortune-cookie-text").innerHTML = fortune[myFortune]
 
 var allFortune = document.createElement("LI");
-var allOfFortune = document.createTextNode(fortune[f]);
+var allOfFortune = document.createTextNode(fortune[myFortune]);
 allFortune.appendChild(allOfFortune);
-document.getElementById("oldFort").appendChild(allFortune);
-//fortune.indexOf(document.getElementById("unfortune").innerHTML)
-fortell.splice(f,1)
-}
-//if fortune == 0 
+document.getElementById("previous-fortunes").appendChild(allFortune);
+fortune.splice(myFortune,1);
 
+
+if (fortune == 0) {
+	fortune.splice(0,0,
+		"Your Gone",
+		"Your Ascending",
+		"Your Trascending",
+		"Your Gonna Caught",
+		"Only Time Will Tell",
+		"All Your Homework is Due Tommorrow",
+		"Your Coding Project is Gonna be Due this Week instead of Next Week",
+		"This is Gonna Take Awhile...",
+		"Undefined... (JK ;)  )",
+		"Your Trig Exam is Due Tommorrow");
+}
+}
 
