@@ -1,7 +1,23 @@
-.dot {
-	height: 500px;
-	width: 500px;
-	background-color: red;
-	display: inline-block;
+#general {
+	background-color: black;
+}
+
+
+#title, #oldFortunes, #previous-fortunes, #button, #unfortunate {
+	text-align: center;
+	color: white;
+}
+
+#fortune-button {
+	border: none;
+	border-radius: 13px;
+	box-shadow: 0 5px gray ;
 
 }
+
+.fortune {
+	text-decoration: underline;
+}
+
+#fortune-button:hover {background-color: white}
+
