@@ -3,38 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="styles.css">
+	
 	<title>Unfortunite Cookie Generator</title>
 </head>
 <body>
+
 	<div id="general" align="center">
 
 		<div id="title">
 			<h1>Unfortante Cookie Generator</h1>
 		</div>
-
-		<script>
-				var fortune = ["test","quiz","hw","cw"];
-
-				function fortuneGiven() { Math.floor(Math.random() * fortune.length)
-				}
-				document.write(fortune[fortuneGiven]);
 		
-		</script>
+		<div id="unfortunate"> 
+          <h1 id="fortune"> Wow! How Unfortunate... </h1>
+          <p id="unfortune"> </p>
+       </div>
 
-		<!--<div id="wheel">
-			<span class="dot"></span>
-		</div>
--->
-		<div id="button">
-			<button type="button">Get Fortune!</button>
-			<button onclick="fortuneGiven()";>Execute</button>
-		</div>
+      <div id="oldF">
+          <h1>  Old Fortunes </h1>
 
-
+          <ul id="oldFort">
+          </ul>
+      </div>
+		
+	<div id="button">
+      <button onclick = "forTell()" id="fortune-button">
+      	<p>Generate Function</p>
+      </button>	
+    </div>	  	
 
 
 
 
 	</div>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
